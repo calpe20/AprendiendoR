@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <row>
+    <Nombre>Carlos</Nombre>
+    <Edad>23</Edad>
+    <Genero>M</Genero>
+  </row>
+  <row>
+    <Nombre>Alberto</Nombre>
+    <Edad>25</Edad>
+    <Genero>M</Genero>
+  </row>
+  <row>
+    <Nombre>Juan</Nombre>
+    <Edad>21</Edad>
+    <Genero>M</Genero>
+  </row>
+  <row>
+    <Nombre>Maria</Nombre>
+    <Edad>27</Edad>
+    <Genero>F</Genero>
+  </row>
+  <row>
+    <Nombre>Carmen</Nombre>
+    <Edad>23</Edad>
+    <Genero>F</Genero>
+  </row>
+  <row>
+    <Nombre>Alba</Nombre>
+    <Edad>22</Edad>
+    <Genero>F</Genero>
+  </row>
+</root>

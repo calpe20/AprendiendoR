@@ -1,0 +1,50 @@
+---
+title: "Solucion - Crea tu propio Markdown"
+author: "Sebastian Tunnell"
+date: "24 de abril de 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Solucion - Crea tu propio Markdown
+
+Esta es la solucion para Crea tu propio Markdown.
+
+## Codigo en R
+
+Aqui mi codigo para importar las ventas:
+
+```{r}
+
+ventas <- read.table("../ventas.csv", sep = ";",header = TRUE)
+
+#Media de Ventas al mes
+sum(ventas$Ventas)/12
+
+```
+
+## Grafica
+
+Aqui mi grafica con barplot():
+
+```{r}
+
+barplot(ventas$Ventas, names.arg= ventas$Animal, col = rainbow(nrow(ventas)))
+
+pie(ventas$Ventas, labels = ventas$Animal, col = rainbow(nrow(ventas)))
+```
+
+Aqui mi grafica con ggplot():
+
+```{r}
+library(ggplot2)
+ggplot(data = ventas, aes(x = Animal, y = Ventas, fill= Animal)) + geom_bar(stat="identity")
+
+```
+
+
+
+Asique ya esta. Ya has terminado!
